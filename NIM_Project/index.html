@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" href = "./style.css">
+
+    <title>NIM Game</title>
+</head>
+<body>
+    <div>Welcome to the NIM game!</div>
+
+    <ul>
+
+        Rules: 
+        <li>In your turn you should enter numbers from 1 to the number you'll choose below. Computer in its turn will generate random numbers in the same range.</li>
+        <li>Each number will be added to the sum of the previous numbers.</li>
+        <li>The first player who will get the sum equivalent the sum you'll also choose below will be the winner! Good luck!</li>
+
+    </ul>
+
+    <div>Let's start with choosing game mode. You have two options: to choose a mode where you can enter a range and a sum, the computer will play with random numbers. The second option is a mode where the computer uses winning strategy for the game from 0 to 100 and adding numbers from 1 to 9.</div>
+
+    <button id = 'winningMode'>The computer uses winning strategy</button>
+    <button id = 'randomMode'>The computer doesn't use winning strategy</button>
+    <div id = 'randomModeField'>
+
+        <div>
+
+            <div>Let's choose the range of numbers and the final sum. Numbers must be integer. The last number for the range must be larger than 1. The sum must be larger than 5. Enter numbers and press the button.</div>
+            <label for = "ChooseRange">Our range will be from 1 to </label>
+            <input type = "number" id = "ChooseRange" placeholder = "1">
+            <div id = "RangeOutput" class = "Output"></div>
+        
+            <label for = "ChooseSum">The sum will be </label>
+            <input type = "number" id = "ChooseSum" placeholder = "6">
+            <div id = "SumOutput" class = "Output"></div>
+
+            <div id = "errorOutput"></div>
+
+        </div>
+    </div>
+
+        <div id = "fieldForBoth">
+        <div>
+            To start a new game click on the button below and you'll know who starts first!
+        </div>
+ 
+        <button id = "firstPlayerChoice">Find out!</button>
+
+        <div id = "PlayingField">
+            <div>You'll start a new game now.</div>
+            <div id = "WhoFirst"></div>
+        
+            <div id = "WhichTurn" class = "Output"></div>
+
+            <label for = "RandomUserNumber" id = "InvisLab">Enter your number</label>
+            <input type = "number" id = "RandomUserNumber">
+            <button id = "UserFinish">I finished my turn</button>
+
+            <div id = "ProcessOutput" class = "Output"></div> 
+            <button id = "CompFinish">Ok</button>
+
+            <div id = "CurrentSum" class = "Output"></div>
+            <div id = "WinnerOutput"></div>
+        
+        </div>
+
+        </div>
+
+   
+
+
+
+    <!-- <div id = 'winningModeField'>
+
+        <div>
+            To start a new game click on the button below and you'll know who starts first!
+        </div>
+
+        <button id = "firstPlayerChoiceAgain">Find out!</button>
+
+        <div id = "PlayingFieldAgain">
+            <div>You'll start a new game now.</div>
+             
+            <div id = "WhoFirst"></div>
+        
+            <div id = "WhichTurn" class = "Output"></div>
+
+            <label for = "RandomUserNumber" id = "InvisLab">Enter your number</label>
+            <input type = "number" id = "RandomUserNumber">
+            <button id = "UserFinish">I finished my turn</button>
+
+            <div id = "ProcessOutput" class = "Output"></div> 
+            <div id = "CurrentSum" class = "Output"></div>
+            <button id = "CompFinish">Ok</button>
+            <div id = "WinnerOutput"></div> 
+        
+        </div>
+
+
+    </div> -->
+
+    <script src = "./script.js"></script>
+  
+</body>
+</html>

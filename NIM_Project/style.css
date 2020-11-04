@@ -1,0 +1,7 @@
+.Output {
+    height: 20px;
+}
+
+#randomModeField, #fieldForBoth, #PlayingFieldAgain, #PlayingField, #CompFinish, #UserFinish, #RandomUserNumber, #InvisLab {
+    display: none;
+}
