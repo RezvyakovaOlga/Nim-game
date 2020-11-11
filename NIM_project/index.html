@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" href = "./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel = "icon" href = "./img/icon.png" type = "image">
+
+    <title>NIM Game</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="animate seven">
+
+            <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>&nbsp;
+            <span>t</span><span>o</span>&nbsp;
+            <span>t</span><span>h</span><span>e</span>&nbsp;
+            <span>n</span><span>i</span><span>m</span>&nbsp;
+            <span>g</span><span>a</span><span>m</span><span>e</span><span>!</span>
+
+        </div>
+
+    </div>
+
+    <div id = "invisSoon">
+
+        <ul>
+    
+            <div id = "rules" class = "center">Rules:</div>
+    
+            <li>In your turn you should enter numbers from 1 to the number you'll choose later. Computer in its turn will generate random numbers in the same range.</li>
+            <li>Each number will be added to the sum of the previous numbers.</li>
+            <li>The first player who will get the sum equivalent the sum you'll also choose will be the winner! Good luck!</li>
+    
+        </ul>
+    
+        <div class = "center">Let's start with choosing game mode. You have two options: to choose a mode where the computer plays with random numbers. The second option is a mode where the computer uses winning strategy.</div> 
+        <div class = "center">P.S.: There is a big possibility you'll lose after choosing the second mode :)</div>
+    
+        <div class = "center">
+            <button id = "winningMode" class = "modeBtn"><a href="#lower">The computer uses winning strategy</a></button>
+            <button id = "randomMode" class = "modeBtn"><a href="#lower">The computer doesn't use winning strategy</a></button>
+        </div>
+
+    </div>
+    <div id = 'startingField'>
+            
+            <div class = "inputs">
+
+                <div>
+                    Let's choose the range of numbers and the final sum. Numbers must be integer. The last number for the range must be larger than 0. The sum must be larger than 5. Enter numbers and press the button.
+                </div>
+
+                <label for = "ChooseSum">The sum will be </label>
+                <input type = "number" id = "ChooseSum" placeholder = "6">
+                <div id = "SumOutput" class = "Output"></div>
+                
+                <label for = "ChooseRange">Our range will be from 1 to </label>
+                <input type = "number" id = "ChooseRange" placeholder = "1">
+                <div id = "RangeOutput" class = "Output"></div>
+
+                <div id = "errorOutput"></div>
+
+                <p><a name="lower"></a></p>
+                <div>
+                    To start a new game click on the button below and you'll know who starts first!
+                </div>
+            </div>
+    
+        
+        <div id="body_button">
+            <div id = "firstPlayerChoice" class="button_hola"><span>Find out!</span></div>
+        </div>
+
+    </div>
+
+    <div id = "playingField">
+
+        <div id = "gameStartAlert">You'll start a new game now.</div>
+           
+        <div class = "inputs">
+
+            <div id = "WhoFirst"></div>
+
+            <div id = "WhichTurn" class = "Output"></div>
+
+            <label for = "RandomUserNumber" id = "InvisLab">Enter your number</label>
+            <input type = "number" id = "RandomUserNumber" class = "centerForEls">
+            <button id = "UserFinish" class = "centerForEls confBtns">I finished my turn</button>
+    
+            <div id = "ProcessOutput" class = "Output"></div> 
+            <button id = "CompFinish" class = "centerForEls confBtns">Ok</button>
+    
+            <div id = "CurrentSum" class = "Output"></div>
+
+        </div>
+        <div id = "WinnerOutput"></div>
+        
+    </div>
+
+
+    <script src = "./script.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+/* * {
+	margin: 0;
+	padding: 0;
+} */
+
+body
+{
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: rgb(248, 210, 163);
+    font-size: 19px;
+    line-height: 1.7;   
+}
+
+input {
+    padding: 10px;
+    font-size: 19px;
+    border: 7px solid rgba(255, 255, 255, .5);
+    box-shadow:
+    0 2px 10px rgba(0, 0, 0, .25) inset,
+    0 2px 10px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .5);
+    outline: none;
+    width: 150px;
+}
+
+.container {
+	width: 100%;
+	margin: auto;
+	font-weight: 900;
+	text-transform: uppercase;
+    text-align: center;	
+}
+
+.animate {
+	font-size: 50px;
+	margin: 50px 0 0;
+	border-bottom: 2px solid #ccc;
+}
+
+.animate span {
+	display: inline-block;
+}
+
+.animate span:nth-of-type(2) {
+	animation-delay: .05s;
+}
+.animate span:nth-of-type(3) {
+	animation-delay: .1s;
+}
+.animate span:nth-of-type(4) {
+	animation-delay: .15s;
+}
+.animate span:nth-of-type(5) {
+	animation-delay: .2s;
+}
+.animate span:nth-of-type(6) {
+	animation-delay: .25s;
+}
+.animate span:nth-of-type(7) {
+	animation-delay: .3s;
+}
+.animate span:nth-of-type(8) {
+	animation-delay: .35s;
+}
+.animate span:nth-of-type(9) {
+	animation-delay: .4s;
+}
+.animate span:nth-of-type(10) {
+	animation-delay: .45s;
+}
+.animate span:nth-of-type(11) {
+	animation-delay: .5s;
+}
+.animate span:nth-of-type(12) {
+	animation-delay: .55s;
+}
+.animate span:nth-of-type(13) {
+	animation-delay: .6s;
+}
+.animate span:nth-of-type(14) {
+	animation-delay: .65s;
+}
+.animate span:nth-of-type(15) {
+	animation-delay: .7s;
+}
+.animate span:nth-of-type(16) {
+	animation-delay: .75s;
+}
+.animate span:nth-of-type(17) {
+	animation-delay: .8s;
+}
+.animate span:nth-of-type(18) {
+	animation-delay: .85s;
+}
+.animate span:nth-of-type(19) {
+	animation-delay: .9s;
+}
+.animate span:nth-of-type(20) {
+	animation-delay: .95s;
+}
+
+.seven span {
+	color: #ffffff;
+	opacity: 0;
+	transform: translate(-150px, 0) scale(.3);
+	animation: leftRight .5s forwards;
+}
+
+@keyframes leftRight {
+	40% {
+		transform: translate(50px, 0) scale(.7);
+        opacity: 1; 
+		color: rgba(255,255,255,.6);
+	}
+
+	60% {
+		color: rgba(0,0,0,.25);
+	}
+
+	80% {
+		transform: translate(0) scale(2);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(0) scale(1);
+		opacity: 1;
+	}
+}
+
+.Output {
+    height: 20px;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+#startingField, #playingField, #CompFinish, #UserFinish, #RandomUserNumber, #InvisLab {
+    display: none;
+}
+
+#rules{
+    font-size: 25px;
+}
+
+.center {
+    text-align: center; 
+}
+
+.modeBtn {
+    display: inline-block;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    box-shadow: 0 3px 20px rgba(0,0,0,.25), inset 0 2px 0 rgba(255,255,255,.6), 0 2px 0 rgba(0,0,0,.1),inset 0 0 20px rgba(0,0,0,.1);
+}
+a {
+    text-decoration: none;
+    color:black
+}
+
+.modeBtn:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.modeBtn:disabled {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+
+
+#body_button{   
+    color: rgb(0, 0, 0);
+    /* text-align: center; */
+
+  }
+  .button_hola,
+  .button_hola::before,
+  .button_hola::after,
+  .button_hola span,
+  .button_hola span::before,
+  .button_hola span::after
+  {
+    transition: all ease .5s;
+  }
+   
+  .button_hola{
+    position: relative;
+    display: inline-block;
+    padding: 0.3em;
+    margin-top: 50px;
+    border: solid 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+   
+  .button_hola:hover
+  {
+    box-shadow: 0 0 5em .5em rgba(0, 0, 0, 0.5);
+  }
+   
+  .button_hola span
+  {
+    display: inline-block;
+    width: 100%;
+    padding: 0.6em 2em;
+  }
+
+  .button_hola::before,
+  .button_hola::after,
+  .button_hola span::before,
+  .button_hola span::after
+  {
+    content: '';
+    position: absolute;
+    border: 1px;
+  }
+   
+  .button_hola::before,
+  .button_hola span::before
+  {
+    border-style: solid none;  
+  }
+   
+  .button_hola::before,
+  .button_hola span::after{      
+    left: 0;
+    top: -0.4em;
+    width: 100%; 
+    height: calc(100% + 0.8em);
+  }
+   
+  .button_hola::after,
+  .button_hola span::after
+  {
+    border-style: none solid;   
+  }
+   
+  .button_hola::after,
+  .button_hola span::before
+  {
+    top: 0;
+    left: -0.4em;
+    height: 100%;
+    width: calc(100% + 0.8em); 
+  }
+   
+  .button_hola:hover::after,
+  .button_hola:hover span::after
+  {
+    transform: scaleY(0);
+  }
+   
+  .button_hola:hover::before,
+  .button_hola:hover span::before
+  {
+    transform: scaleX(0);
+  }
+   
+  .button_hola:hover span::after,
+  .button_hola:hover span::before
+  {
+    opacity: 0;
+  }
+
+.inputs {
+    width: 100%;
+    text-align: center;
+    
+}
+
+.centerForEls {
+    display: block;
+    margin: 10px auto; 
+}
+
+#gameStartAlert {
+    font-size: 25px;
+    text-align: center;
+    margin: 15px;
+    height: 30px;
+}
+
+#WhoFirst {
+    height: 27px;
+}
+
+.Output {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.confBtns {
+    display: block;
+    margin: 15px auto;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 20px 30px;
+    position: relative;
+    color: gray;
+    border: 1px solid gray;
+    background: none;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+  .confBtns:before,
+  .confBtns:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    box-sizing: border-box;
+  }
+  .confBtns:before {
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+  }
+  .confBtns:after {
+    top: 0;
+    right: 0;
+    border-right: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
+  }
+  .confBtns:hover:before,
+  .confBtns:hover:after{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+  }
+  .confBtns:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
+  .confBtns:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
+  .confBtns:hover {
+      color: black;
+      background: rgba(150, 149, 149, 0.2);}
